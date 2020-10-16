@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Vito Ren&#242;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-16 11:49:37 "/>
+        <attribute name="created" value="Vml0byBSZW7DsjtNQVJWSU47MjAyMC0xMC0xNTsiMDE6MDc6NTAgIjsyNjI1"/>
+        <attribute name="edited" value="Vml0byBSZW7DsjtNQVJWSU47MjAyMC0xMC0xNjsiMTE6NDk6MzcgIjs2OzI3NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="voto" type="Integer" array="False" size=""/>
+            <declare name="totaleVotiPesati" type="Integer" array="False" size=""/>
+            <declare name="CFU" type="Integer" array="False" size=""/>
+            <declare name="totaleCFU" type="Integer" array="False" size=""/>
+            <declare name="mediaPesata" type="Real" array="False" size=""/>
+            <assign variable="totaleVotiPesati" expression="0"/>
+            <assign variable="totaleCFU" expression="0"/>
+            <output expression="&quot;Inserire un voto (-1 per terminare)&quot;" newline="True"/>
+            <input variable="voto"/>
+            <while expression="voto != -1">
+                <output expression="&quot;Inserire il numero di CFU&quot;" newline="True"/>
+                <input variable="CFU"/>
+                <assign variable="totaleVotiPesati" expression="totaleVotiPesati + (voto*CFU)"/>
+                <assign variable="totaleCFU" expression="totaleCFU + CFU"/>
+                <output expression="&quot;Inserire un voto (-1 per terminare)&quot;" newline="True"/>
+                <input variable="voto"/>
+            </while>
+            <if expression="totaleCFU != 0">
+                <then>
+                    <assign variable="mediaPesata" expression="totaleVotiPesati/totaleCFU"/>
+                    <output expression="&quot;La media pesata &#232;&quot;" newline="False"/>
+                    <output expression="mediaPesata" newline="True"/>
+                    <output expression="&quot;su un totale di CFU pari a &quot;" newline="False"/>
+                    <output expression="totaleCFU" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Non e' stato possibile calcolare la media pesata&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
