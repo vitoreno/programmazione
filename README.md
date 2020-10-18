@@ -5,8 +5,8 @@ Repository di codici per il corso di Programmazione. Corso di Laurea in Informat
 
 * I codici prodotti in aula vengono inseriti in Solution di Visual Studio dal nome CapitoloXDeitel. Ogni Solution contiene un progetto per ogni esercizio svolto.  
 * Tutti i codici relativi ad esercitazioni svolte dagli studenti vengono inseriti in cartelle secondo il seguente ordine:	
-	\NomeEsercitazione
-		\Autore1
-		\Autore2
-		...
-		\AutoreN
+	* **\NomeEsercitazione**
+		* _\Autore1_
+		* _\Autore2_
+		* _..._
+		* _\AutoreN_
