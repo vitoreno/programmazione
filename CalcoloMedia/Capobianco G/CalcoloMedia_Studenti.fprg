@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pronto all'uso"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-14 06:24:09 "/>
+        <attribute name="created" value="cHJvbnRvIGFsbCd1c287TEFQVE9QLVIxU1JUOUVOOzIwMjAtMTAtMTQ7IjA0OjMwOjI3ICI7MzY3NQ=="/>
+        <attribute name="edited" value="cHJvbnRvIGFsbCd1c287TEFQVE9QLVIxU1JUOUVOOzIwMjAtMTAtMTQ7IjA2OjI0OjA5ICI7NjszNzkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NVoti" type="Integer" array="False" size=""/>
+            <declare name="Voto" type="Integer" array="False" size=""/>
+            <declare name="Media" type="Real" array="False" size=""/>
+            <declare name="NStudenti" type="Integer" array="False" size=""/>
+            <declare name="CounterV" type="Integer" array="False" size=""/>
+            <declare name="CounterStud" type="Integer" array="False" size=""/>
+            <declare name="Somma" type="Integer" array="False" size=""/>
+            <assign variable="CounterV" expression="0"/>
+            <assign variable="CounterStud" expression="0"/>
+            <assign variable="Somma" expression="0"/>
+            <output expression="&quot;Di quanti studenti si vuole calcolare la media?&quot;" newline="True"/>
+            <input variable="NStudenti"/>
+            <while expression="CounterStud&lt;NStudenti">
+                <output expression="&quot;Di quanti voti si vuole calcolare la media?&quot;" newline="True"/>
+                <input variable="NVoti"/>
+                <while expression="CounterV&lt;NVoti">
+                    <output expression="&quot;Inserire Voto&quot;" newline="True"/>
+                    <input variable="Voto"/>
+                    <assign variable="Somma" expression="Somma+Voto"/>
+                    <assign variable="CounterV" expression="CounterV+1"/>
+                </while>
+                <assign variable="Media" expression="Somma/NVoti"/>
+                <output expression="&quot;Media:&quot;" newline="True"/>
+                <output expression="Media" newline="True"/>
+                <assign variable="Somma" expression="0"/>
+                <assign variable="CounterV" expression="0"/>
+                <assign variable="CounterStud" expression="CounterStud+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
