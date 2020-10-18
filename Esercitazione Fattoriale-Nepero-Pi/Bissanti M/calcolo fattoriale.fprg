@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="genie"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-17 04:28:43 "/>
+        <attribute name="created" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA0OjA2OjI0ICI7Mjc0OA=="/>
+        <attribute name="edited" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA0OjI4OjQzICI7MjsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fattoriale" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="fattoriale" expression="1"/>
+            <output expression="&quot;Inserire il numero per calcolare il fattoriale&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n!=0">
+                <assign variable="fattoriale" expression="fattoriale*n"/>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="fattoriale" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

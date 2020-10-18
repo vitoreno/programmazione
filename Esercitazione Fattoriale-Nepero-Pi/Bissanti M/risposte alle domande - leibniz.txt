@@ -1,0 +1,13 @@
+1. Dopo quante iterazioni si approssima pi alla seconda, quarta, sesta e decima cifra decimale ? 
+
+2. È possibile implementare la formula alternando le somme e le differenze senza ricorrere a (-1) elevato a n? 
+
+3. Cosa succede se si vuole far partire il contatore da 0? Cosa se invece si parte da 1?
+
+-------------------------------------------------------------------------
+
+1) 3, 4, 5, 6.
+2) Sì, è possibile. Nel mio codice ho evitato di inserire la potenza(per non includere un ulteriore libreria) e quindi ho codificato un controllo che decide se usare il numero uno positivo o negativo.
+3) Se il contatore è uguale a 0, il programma funziona normalmente. Se invece il contatore è inizializzato a 1, il programma farà sempre un iterazione in meno rispetto a quelle richieste dall'utente. (per rispondere a questa domanda ho implentato un contatore a parte).
+
+Michele Bissanti

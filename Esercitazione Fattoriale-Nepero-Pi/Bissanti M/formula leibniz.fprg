@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="genie"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-17 06:59:36 "/>
+        <attribute name="created" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA1OjM2OjI5ICI7Mjc1Nw=="/>
+        <attribute name="edited" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA2OjU5OjM2ICI7OTsyODc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="formula" type="Real" array="False" size=""/>
+            <declare name="iterazioni" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="formula" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;Inserire il numero di iterazioni richieste&quot;" newline="True"/>
+            <input variable="iterazioni"/>
+            <while expression="n!=iterazioni">
+                <assign variable="formula" expression="formula+ (-1^n)/(2*n+1)"/>
+                <assign variable="n" expression="n+1"/>
+            </while>
+            <output expression="formula" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

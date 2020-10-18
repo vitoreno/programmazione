@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="genie"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-17 05:31:31 "/>
+        <attribute name="created" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA0OjM5OjM3ICI7Mjc1OA=="/>
+        <attribute name="edited" value="Z2VuaWU7REVTS1RPUC0wUzJDTkNEOzIwMjAtMTAtMTc7IjA1OjMxOjMxICI7NDsyODU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iterazioni" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="fatt" type="Integer" array="False" size=""/>
+            <declare name="e" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quante iterazioni deve fare il programma?&quot;" newline="True"/>
+            <input variable="iterazioni"/>
+            <assign variable="fatt" expression="1"/>
+            <assign variable="n" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="e" expression="1"/>
+            <while expression="i!=iterazioni">
+                <assign variable="n" expression="i"/>
+                <while expression="n!=0">
+                    <assign variable="fatt" expression="fatt*n"/>
+                    <assign variable="n" expression="n-1"/>
+                </while>
+                <assign variable="e" expression="e + 1/fatt"/>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="fatt" expression="1"/>
+            </while>
+            <output expression="e" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
