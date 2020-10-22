@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="root"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-14 07:24:03 "/>
+        <attribute name="created" value="cm9vdDtERVNLVE9QLUxTN0pWRzY7MjAyMC0xMC0xNDsiMDc6MTk6MjEgIjsyNzE5"/>
+        <attribute name="edited" value="cm9vdDtERVNLVE9QLUxTN0pWRzY7MjAyMC0xMC0xNDsiMDc6MjQ6MDMgIjsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="voto" type="Integer" array="False" size=""/>
+            <input variable="voto"/>
+            <if expression="voto &gt; 30">
+                <then>
+                    <output expression="&quot;Lode&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="voto &gt;= 27">
+                        <then>
+                            <output expression="&quot;Ottimo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="voto &gt;= 18">
+                                <then>
+                                    <output expression="&quot;Promosso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Bocciato&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
