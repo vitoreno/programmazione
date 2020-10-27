@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mikic"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-27 04:57:32 "/>
+        <attribute name="created" value="bWlraWM7TEFQVE9QLUcxN0dNQlM0OzIwMjAtMTAtMjQ7IjEwOjA3OjEyICI7MjczNQ=="/>
+        <attribute name="edited" value="bWlraWM7TEFQVE9QLUcxN0dNQlM0OzIwMjAtMTAtMjc7IjA0OjU3OjMyICI7NDsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="giorno" type="Integer" array="False" size=""/>
+            <declare name="mese" type="Integer" array="False" size=""/>
+            <output expression="&quot;inserire giorno di nascita&quot;" newline="True"/>
+            <input variable="giorno"/>
+            <output expression="&quot;inserire mese di nascita (in numeri)&quot;" newline="True"/>
+            <input variable="mese"/>
+            <if expression="mese=1">
+                <then>
+                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                        <then>
+                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=20">
+                                <then>
+                                    <output expression="&quot;Capricorno!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Acquario&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="mese=2">
+                        <then>
+                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=29">
+                                <then>
+                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=20">
+                                        <then>
+                                            <output expression="&quot;Acquario&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Pesci&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="mese=3">
+                                <then>
+                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                        <then>
+                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=20">
+                                                <then>
+                                                    <output expression="&quot;Pesci&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Ariete!&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="mese=4">
+                                        <then>
+                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=30">
+                                                <then>
+                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=20">
+                                                        <then>
+                                                            <output expression="&quot;Ariete!&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Toro!&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="mese=5">
+                                                <then>
+                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                                        <then>
+                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=20">
+                                                                <then>
+                                                                    <output expression="&quot;Toro!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Gemelli!&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="mese=6">
+                                                        <then>
+                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=30">
+                                                                <then>
+                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=21">
+                                                                        <then>
+                                                                            <output expression="&quot;Gemelli!&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Cancro!&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="mese=7">
+                                                                <then>
+                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                                                        <then>
+                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=22">
+                                                                                <then>
+                                                                                    <output expression="&quot;Cancro!&quot;" newline="True"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Leone!&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="mese=8">
+                                                                        <then>
+                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                                                                <then>
+                                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=23">
+                                                                                        <then>
+                                                                                            <output expression="&quot;Leone!&quot;" newline="True"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;Vergine!&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="mese=9">
+                                                                                <then>
+                                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=30">
+                                                                                        <then>
+                                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=22">
+                                                                                                <then>
+                                                                                                    <output expression="&quot;Vergine!&quot;" newline="True"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <output expression="&quot;Bilancia!&quot;" newline="True"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="mese=10">
+                                                                                        <then>
+                                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                                                                                <then>
+                                                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=22">
+                                                                                                        <then>
+                                                                                                            <output expression="&quot;Bilancia!&quot;" newline="True"/>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <output expression="&quot;Scorpione!&quot;" newline="True"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="mese=11">
+                                                                                                <then>
+                                                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=30">
+                                                                                                        <then>
+                                                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=22">
+                                                                                                                <then>
+                                                                                                                    <output expression="&quot;Scorpione!&quot;" newline="True"/>
+                                                                                                                </then>
+                                                                                                                <else>
+                                                                                                                    <output expression="&quot;Sagittario!&quot;" newline="True"/>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="mese=12">
+                                                                                                        <then>
+                                                                                                            <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=31">
+                                                                                                                <then>
+                                                                                                                    <if expression="giorno&gt;=1&amp;&amp;giorno&lt;=21">
+                                                                                                                        <then>
+                                                                                                                            <output expression="&quot;Sagittario!&quot;" newline="True"/>
+                                                                                                                        </then>
+                                                                                                                        <else>
+                                                                                                                            <output expression="&quot;Capricorno!&quot;" newline="True"/>
+                                                                                                                        </else>
+                                                                                                                    </if>
+                                                                                                                </then>
+                                                                                                                <else>
+                                                                                                                    <output expression="&quot;Giorno non valido&quot;" newline="True"/>
+                                                                                                                </else>
+                                                                                                            </if>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <output expression="&quot;Mese non valido&quot;" newline="True"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
