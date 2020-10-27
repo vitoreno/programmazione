@@ -10,3 +10,8 @@ Repository di codici per il corso di Programmazione. Corso di Laurea in Informat
 		* _\Autore2_
 		* _..._
 		* _\AutoreN_
+
+
+## Nota sui diagrammi di flusso
+
+I file in formato .fprg contengono i diagrammi di flusso delle soluzioni pubblicate nel repository. Tali file possono essere letti, modificati ed eseguiti utilizzando il software Flowgorithm (http://www.flowgorithm.org/) 
