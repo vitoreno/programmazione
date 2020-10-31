@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giaco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-28 06:50:58 "/>
+        <attribute name="created" value="Z2lhY287TEFQVE9QLTBEQUo5NFQ1OzIwMjAtMTAtMjg7IjAzOjEyOjQ3ICI7MjcxMg=="/>
+        <attribute name="edited" value="Z2lhY287TEFQVE9QLTBEQUo5NFQ1OzIwMjAtMTAtMjg7IjA2OjUwOjU4ICI7MzsyODI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nPal, numCifre" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserire un numero intero da 5 cifre&quot;" newline="True"/>
+            <input variable="nPal"/>
+            <assign variable="numCifre" expression="floor(log10(nPal) + 1)"/>
+            <while expression="numCifre &gt; 5">
+                <output expression="&quot;ERRORE - Inserire un numero intero da 5 cifre&quot;" newline="True"/>
+                <input variable="nPal"/>
+                <assign variable="numCifre" expression="floor(log10(nPal) + 1)"/>
+            </while>
+            <if expression="nPal &lt; 0">
+                <then>
+                    <assign variable="nPal" expression="nPal * -1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="nPal == invertiNumero(nPal, numCifre)">
+                <then>
+                    <output expression="&quot;Il numero e' palindromo &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero non e' palindromo &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="invertiNumero" type="Integer" variable="inverso">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+            <parameter name="nCifre" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="inverso, i, cifra" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="inverso" expression="0"/>
+            <do expression="">
+                <assign variable="cifra" expression="n % 10"/>
+                <assign variable="inverso" expression="inverso * 10 + cifra"/>
+                <assign variable="n" expression="n / 10"/>
+                <assign variable="i" expression="i + 1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
