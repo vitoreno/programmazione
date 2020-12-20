@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleSortV2", "BubbleSortV
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AritmeticaPuntatori", "AritmeticaPuntatori\AritmeticaPuntatori.vcxproj", "{CD2CB2AC-CBEE-45F6-94AA-A299C5B00EA3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PuntatoriFunzione", "PuntatoriFunzione\PuntatoriFunzione.vcxproj", "{228806E9-6EB0-4A65-9F87-594E438A81EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{CD2CB2AC-CBEE-45F6-94AA-A299C5B00EA3}.Release|x64.Build.0 = Release|x64
 		{CD2CB2AC-CBEE-45F6-94AA-A299C5B00EA3}.Release|x86.ActiveCfg = Release|Win32
 		{CD2CB2AC-CBEE-45F6-94AA-A299C5B00EA3}.Release|x86.Build.0 = Release|Win32
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Debug|x64.ActiveCfg = Debug|x64
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Debug|x64.Build.0 = Debug|x64
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Debug|x86.ActiveCfg = Debug|Win32
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Debug|x86.Build.0 = Debug|Win32
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Release|x64.ActiveCfg = Release|x64
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Release|x64.Build.0 = Release|x64
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Release|x86.ActiveCfg = Release|Win32
+		{228806E9-6EB0-4A65-9F87-594E438A81EA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
