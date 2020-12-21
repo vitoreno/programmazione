@@ -8,3 +8,6 @@ Il file obj e' un file di testo in cui:
 
 Si utilizza l'equazione parametrica della retta 3D al variare del parametro t tra -100 e 100
 https://www.youmath.it/lezioni/algebra-lineare/geometria-dello-spazio/677-formule-per-le-equazioni-parametriche-della-retta.html
+
+## Per aprire i file obj...
+...e' possibile utilizzare, tra gli altri, il software Meshlab disponibile al sito: https://www.meshlab.net/#download
