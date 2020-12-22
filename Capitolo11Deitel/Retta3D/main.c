@@ -35,6 +35,7 @@ int main()
 		printf("Inserire una direzione (componenti di un vettore parallelo alla retta): ");
 		scanf("%f %f %f", &Direzione.x, &Direzione.y, &Direzione.z);
 
+		/* Scrittura di alcuni commenti in testa al file .obj */
 		fprintf(pObj, "# File obj per disegnare la retta 3D passante per il punto\n");
 		fprintf(pObj, "# di coordinate (x, y, z) = (%f, %f, %f)\n", Punto.x, Punto.y, Punto.z);
 		fprintf(pObj, "# e parallelo al vettore di componenti (l, m, n) = (%f, %f, %f)\n", Direzione.x, Direzione.y, Direzione.z);
@@ -43,16 +44,14 @@ int main()
 			tmp.x = Punto.x + Direzione.x * t;
 			tmp.y = Punto.y + Direzione.y * t;
 			tmp.z = Punto.z + Direzione.z * t;
-			fprintf(pObj, "v %f %f %f\n", tmp.x, tmp.y, tmp.z);
+			fprintf(pObj, "v %f %f %f\n", tmp.x, tmp.y, tmp.z); /* Scrittura di ogni vertice */
 		}
-		fprintf(pObj, "# Fine del file ob\n");
+		fprintf(pObj, "# Fine del file obj\n");
 
 		fclose(pObj);
 	}
 	else
 		printf("Impossibile aprire il file Retta3D.obj\n");
-
-	
 
 	return 0;
 }

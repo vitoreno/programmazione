@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0676fd86-dce4-435d-9481-518a0100e01f}</ProjectGuid>
-    <RootNamespace>Retta3D</RootNamespace>
+    <ProjectGuid>{fe2b8231-817c-4012-8ee4-577dfb9401ea}</ProjectGuid>
+    <RootNamespace>PgmAscii</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
