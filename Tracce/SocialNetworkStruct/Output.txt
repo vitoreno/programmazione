@@ -1,0 +1,5 @@
+Riepilogo ultima query effettuata
+Query: Tipologia 0 - Genere 1
+Num profili con stessa preferenza tipologia: 3
+Num profili con stessa preferenza genere: 2
+Match: 1
